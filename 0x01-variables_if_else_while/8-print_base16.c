@@ -1,23 +1,28 @@
+/*
+ * File: 8-print_base16.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - Prints all the numbers of base 16 in lowercase.
  *
-*/
-
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int n;
-	char low;
+	int num;
+	char letter;
 
-	for (n = 0; n < 10; n++)
-	putchar(n);
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	for (low = 'a'; low <= 'f'; low++)
-	{
-	putchar(low);
-	}
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+
+	putchar('\n');
 
 	return (0);
 }
+
