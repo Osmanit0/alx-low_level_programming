@@ -9,15 +9,16 @@
 int main(void)
 {
 	int n;
+	char low;
 
-	for (n = 48; n < 58; n++)
+	for (n = 0; n < 10; n++)
+	putchar(n);
+
+	for (low = 'a'; low <= 'f'; low++)
 	{
-	if (n != 57)
-	{
-	putchar('.');
-	putchar(' ');
-	}
-	}
+	putchar(low);
 	putchar('\n');
+	}
+
 	return (0);
 }
